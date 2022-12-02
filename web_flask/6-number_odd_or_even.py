@@ -45,7 +45,7 @@ def number_template_route(n):
     """ Return function for the corresponding route """
     return render_template('5-number.html',
                            number=str(n),
-                           state="odd" if n % 2 == 0 else "even")
+                           state="odd" if n % 2 != 0 else "even")
 
 
 if __name__ == '__main__':
