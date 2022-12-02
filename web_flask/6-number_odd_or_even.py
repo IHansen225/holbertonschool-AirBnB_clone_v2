@@ -44,6 +44,13 @@ def number_route(n):
 def number_template_route(n):
     """ Return function for the corresponding route """
     return render_template('5-number.html',
+                           number=str(n))
+
+
+@app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
+def state_route(n):
+    """ Return function for the corresponding route """
+    return render_template('6-number_odd_or_even.html',
                            number=str(n),
                            state="odd" if n % 2 != 0 else "even")
 
