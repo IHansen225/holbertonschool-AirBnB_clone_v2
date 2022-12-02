@@ -27,7 +27,7 @@ def text_route(text):
 
 
 @app.route('/python/<text>', strict_slashes=False)
-def python_route(text):
+def python_route(text="is cool"):
     """ Return function for the corresponding route """
     text = text.replace('_', ' ')
     return 'Python {}'.format(text)
