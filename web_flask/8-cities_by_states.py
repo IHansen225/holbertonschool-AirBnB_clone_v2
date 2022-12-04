@@ -8,7 +8,7 @@ from models import storage
 app = Flask(__name__)
 
 
-@app.route('/states_list', strict_slashes=False)
+@app.route('/cities_by_states', strict_slashes=False)
 def index():
     """ Return function for the corresponding route """
     return render_template(
